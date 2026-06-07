@@ -27,15 +27,15 @@ approval-system/
 
 ## 개발 순서
 
-1. 프로젝트 생성 ✅
+1. 프로젝트 생성 
 2. Docker (MariaDB, Redis) 띄우기 — Docker 설치 시 `docker compose up -d`, 미설치 시 `standalone` 프로필 사용
-3. User Entity ✅
-4. Department Entity ✅
-5. JWT 로그인 ✅
-6. Approval Entity ✅
-7. 결재 생성 API ✅
-8. 결재 승인 API ✅
-9. 결재 반려 API ✅
+3. User Entity 
+4. Department Entity 
+5. JWT 로그인 
+6. Approval Entity 
+7. 결재 생성 API 
+8. 결재 승인 API 
+9. 결재 반려 API 
 10. Redis 알림 (스켈레톤 완료)
 
 ## 실행 방법
