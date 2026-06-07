@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:approval_test;MODE=MySQL;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:mem:approval_standalone;MODE=MySQL;DB_CLOSE_DELAY=-1
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -11,6 +11,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+    show-sql: true
     open-in-view: false
 
   autoconfigure:
@@ -18,7 +20,6 @@ spring:
       - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
       - org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration
 
-jwt:
-  secret: test-jwt-secret-key-for-unit-test-only-32chars
-  access-expiration: 3600000
-  refresh-expiration: 604800000
+logging:
+  level:
+    org.hibernate.SQL: debug
